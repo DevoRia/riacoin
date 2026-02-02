@@ -1,0 +1,23 @@
+[package]
+name = "riacoin_node"
+version = "0.2.1"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+libp2p = { version = "0.52", features = ["tcp", "dns", "noise", "yamux", "gossipsub", "floodsub", "mdns", "macros", "request-response", "cbor", "websocket", "ping", "identify"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+hex = "0.4"
+chrono = "0.4"
+rand = "0.8"
+colored = "2.0"
+once_cell = "1.18"
+log = "0.4"
+env_logger = "0.10"
+anyhow = "1.0"
+sled = "0.34"
+bincode = "1.3"
+ed25519-dalek = { version = "2.0", features = ["rand_core"] }
+futures = "0.3"
